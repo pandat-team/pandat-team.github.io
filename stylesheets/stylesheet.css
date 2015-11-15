@@ -47,7 +47,11 @@ table {
 /*******************************************************************************
 Theme Styles
 *******************************************************************************/
-
+iframe{
+   -webkit-filter: invert(1);
+   padding-right: 100px;
+   margin-top: 30px;
+}
 body {
   box-sizing: border-box;
   color:#373737;
@@ -59,7 +63,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -67,8 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 800;
 }
 
 h2 {
@@ -262,11 +265,12 @@ Full-Width Styles
 
 .outer {
   width: 100%;
+  height: 30%;
 }
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 1000px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -275,7 +279,7 @@ Full-Width Styles
   display: block;
   position: absolute;
   top:0;
-  right: 10px;
+  right: -150px;
   z-index: 10;
   padding: 10px 50px 10px 10px;
   color: #fff;
@@ -284,6 +288,10 @@ Full-Width Styles
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+
+#forkme_banner:hover{
+  height: 15%;
 }
 
 #header_wrap {
@@ -296,20 +304,22 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
 }
 
 #project_title {
-  margin: 0;
+  position:absolute;
+  margin-top: -170px;
+  margin-left: 410px;
   color: #fff;
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 700;
   text-shadow: #111 0px 0px 10px;
 }
 
 #project_tagline {
+  margin-top: -90px;
   color: #fff;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
@@ -383,10 +393,7 @@ Small Device Styles
     display: none;
   }
 
-  .inner {
-    min-width: 320px;
-    max-width: 480px;
-  }
+ 
 
   #project_title {
   font-size: 32px;
