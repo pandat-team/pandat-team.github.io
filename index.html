@@ -56,14 +56,14 @@
 	  <h1><small>Pandat is <a href="http://pandoc.org/">Pandoc</a> for data. It lets you convert between XML, JSON, CSV, SQL, and many more. It's on <a href="https://www.npmjs.com/package/pandat">NPM</a>.</small></h1>
 	</div>
       </div>
-      
+
       
       
       <div class="row">
 	<div class="col-sm-offset-1 col-sm-5">
 	  <div class="form-group">
 	    <label for="comment">XML:</label>
-	    <textarea class="form-control" rows="27" id="xml">
+	    <textarea class="form-control" rows="27" id="xml" readonly>
 <CATALOG>
 <CD>
     <TITLE>Empire Burlesque</TITLE>
@@ -99,7 +99,11 @@
 	  <h3>Remember CDs?</h3>
 	  <p class="lead">We can convert this representation into <strong>CSV</strong>, <strong>JSON</strong>, <strong>SQL</strong>, and <strong>GraphViz</strong>.</p>
 
-	  <p>Press the button to see the magic...</p>
+	  <blockquote>
+	    npm install -g pandat
+	  </blockquote>
+
+	  <p>Press the button to see the converted data...</p>
 
 	  <p><a href="#magic"><button type="button" class="btn btn-success">Magic!</button></a></p>
 	</div>
@@ -127,6 +131,9 @@
 	<div class="col-sm-offset-1 col-sm-5">
 	  <div class="form-group">
 	    <label for="comment">JSON:</label>
+	  <blockquote>
+	   pandat -f xml -t json file.xml
+	  </blockquote>
 	    <textarea class="form-control" rows="27" id="json">
 {"catalog":
     [{"cd": {"title": "Empire Burlesque",
@@ -159,6 +166,9 @@
 	<div class="col-sm-5">
 	    <div class="form-group">
 	    <label for="comment">CSV:</label>
+	    <blockquote>
+	      pandat -f xml -t csv file.xml
+	    </blockquote>
 	    <textarea class="form-control" rows="27" id="json">
 title,artist,country,company,price,year
 Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985
@@ -177,6 +187,9 @@ Greatest Hits,Dolly Parton,USA,9.90,1982
 	<div class="col-sm-offset-1 col-sm-5">
 	  <div class="form-group">
 	    <label for="comment">SQL:</label>
+	    <blockquote>
+	      pandat -f xml -t sql file.xml
+	    </blockquote>
 	    <textarea class="form-control" rows="27" id="xml">
 INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Empire Burlesque","Bob Dylan","USA","Columbia","10.90","1985");
 INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Hide your heart","Bonnie Tyler","UK","CBS Records","9.90","1988");
@@ -187,6 +200,10 @@ INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Greatest 
 	
 	<div class="col-sm-5">
 	  <p><strong>Graphviz:</strong></p>
+	  <blockquote>
+	    pandat -f xml -t gv file.xml > file.dot
+	    dot -Tpng file.dot > graph.png
+	  </blockquote>
 	  <img src="graph.png" width="440px"/>
 	</div>
       </div>
