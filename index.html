@@ -65,34 +65,34 @@
 	  <div class="form-group">
 	    <label for="comment">XML:</label>
 	    <textarea class="form-control" rows="27" id="xml" readonly>
-<CATALOG>
-<CD>
-    <TITLE>Empire Burlesque</TITLE>
-    <ARTIST>Bob Dylan</ARTIST>
-    <COUNTRY>USA</COUNTRY>
-    <COMPANY>Columbia</COMPANY>
-    <PRICE>10.90</PRICE>
-    <YEAR>1985</YEAR>
-</CD>
-<CD>
-    <TITLE>Hide your heart</TITLE>
-    <ARTIST>Bonnie Tyler</ARTIST>
-    <COUNTRY>UK</COUNTRY>
-    <COMPANY>CBS Records</COMPANY>
-    <PRICE>9.90</PRICE>
-    <YEAR>1988</YEAR>
-</CD>
-<CD>
-    <TITLE>Greatest Hits</TITLE>
-    <ARTIST>Dolly Parton</ARTIST>
-    <COUNTRY>USA</COUNTRY>
-    <COMPANY>RCA</COMPANY>
-    <PRICE>9.90</PRICE>
-    <YEAR>1982</YEAR>
-</CD>
-</CATALOG>
-	  </textarea>
-	 </div> 
+	      <CATALOG>
+		<CD>
+		  <TITLE>Empire Burlesque</TITLE>
+		  <ARTIST>Bob Dylan</ARTIST>
+		  <COUNTRY>USA</COUNTRY>
+		  <COMPANY>Columbia</COMPANY>
+		  <PRICE>10.90</PRICE>
+		  <YEAR>1985</YEAR>
+		</CD>
+		<CD>
+		  <TITLE>Hide your heart</TITLE>
+		  <ARTIST>Bonnie Tyler</ARTIST>
+		  <COUNTRY>UK</COUNTRY>
+		  <COMPANY>CBS Records</COMPANY>
+		  <PRICE>9.90</PRICE>
+		  <YEAR>1988</YEAR>
+		</CD>
+		<CD>
+		  <TITLE>Greatest Hits</TITLE>
+		  <ARTIST>Dolly Parton</ARTIST>
+		  <COUNTRY>USA</COUNTRY>
+		  <COMPANY>RCA</COMPANY>
+		  <PRICE>9.90</PRICE>
+		  <YEAR>1982</YEAR>
+		</CD>
+	      </CATALOG>
+	    </textarea>
+	  </div> 
 	</div>
 
 	<div class="col-sm-5">
@@ -113,13 +113,13 @@
 
 
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
 
@@ -133,35 +133,35 @@
 	  <div class="form-group">
 	    <label for="comment">JSON:</label>
 
-	  <blockquote>
-	   pandat -f xml -t json file.xml
-	  </blockquote>
+	    <blockquote>
+	      pandat -f xml -t json file.xml
+	    </blockquote>
 
 
-	  <textarea class="form-control" rows="27" id="json" readonly>
+	    <textarea class="form-control" rows="27" id="json" readonly>
 
-{"catalog":
-    [{"cd": {"title": "Empire Burlesque",
-             "artist": "Bob Dylan",
-             "country": "USA",
-             "company": "Columbia",
-             "price": 10.90,
-             "year": 1985 }
-     },
-     {"cd": {"title": "Hide your heart",
-             "artist": "Bonnie Tyler",
-             "country": "UK",
-             "company": "CBS Records",
-             "price": 9.90,
-             "year": 1988 }
-     },
-     {"cd": {"title": "Greatest Hits",
-             "artist": "Dolly Parton",
-             "country": "USA",
-             "price": 9.90,
-             "year": 1982 }
-     }]
-}
+	      {"catalog":
+	      [{"cd": {"title": "Empire Burlesque",
+              "artist": "Bob Dylan",
+              "country": "USA",
+              "company": "Columbia",
+              "price": 10.90,
+              "year": 1985 }
+	      },
+	      {"cd": {"title": "Hide your heart",
+              "artist": "Bonnie Tyler",
+              "country": "UK",
+              "company": "CBS Records",
+              "price": 9.90,
+              "year": 1988 }
+	      },
+	      {"cd": {"title": "Greatest Hits",
+              "artist": "Dolly Parton",
+              "country": "USA",
+              "price": 9.90,
+              "year": 1982 }
+	      }]
+	      }
  	    </textarea>
 	  </div>
 	  
@@ -169,7 +169,7 @@
 	</div>
 
 	<div class="col-sm-5">
-	    <div class="form-group">
+	  <div class="form-group">
 	    <label for="comment">CSV:</label>
 
 	    <blockquote>
@@ -178,10 +178,10 @@
 
 	    <textarea class="form-control" rows="27" id="json" readonly>
 
-title,artist,country,company,price,year
-Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985
-Hide your heart,Bonnie Tyler,UK,CBS Records,9.90,1988
-Greatest Hits,Dolly Parton,USA,9.90,1982
+	      title,artist,country,company,price,year
+	      Empire Burlesque,Bob Dylan,USA,Columbia,10.90,1985
+	      Hide your heart,Bonnie Tyler,UK,CBS Records,9.90,1988
+	      Greatest Hits,Dolly Parton,USA,9.90,1982
  	    </textarea>
 	  </div>
 	  
@@ -202,9 +202,9 @@ Greatest Hits,Dolly Parton,USA,9.90,1982
 
 	    <textarea class="form-control" rows="27" id="xml" readonly>
 
-INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Empire Burlesque","Bob Dylan","USA","Columbia","10.90","1985");
-INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Hide your heart","Bonnie Tyler","UK","CBS Records","9.90","1988");
-INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Greatest Hits","Dolly Parton","USA","RCA","9.90","1982");      
+	      INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Empire Burlesque","Bob Dylan","USA","Columbia","10.90","1985");
+	      INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Hide your heart","Bonnie Tyler","UK","CBS Records","9.90","1988");
+	      INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Greatest Hits","Dolly Parton","USA","RCA","9.90","1982");      
 	    </textarea>
 	  </div> 
 	</div>
@@ -218,7 +218,7 @@ INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Greatest 
 	  <img src="graph.png" width="440px"/>
 	</div>
       </div>
-
+      
 
 
 
@@ -235,17 +235,21 @@ INSERT INTO catalog (title,artist,country,company,price, year) VALUES("Greatest 
 
     </div>
     
+    
+    
+</div>
 
+<br/><br/><br/><br/><br/><br/>
 
-
-
-
-
-
-
-
-
-      
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" align="center">
+	<img width="128px" height="128px" src="http://www.cs.brandeis.edu/~codestellation/icon.png" />
+	<p>A <a href="http://codestellation.io">Codestellation</a> project</p>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
